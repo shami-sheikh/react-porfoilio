@@ -111,7 +111,7 @@ function Header() {
           whileHover={{ rotate: 2, scale: 1.05 }}
         >
           <img src={logo} alt="Sami Sheikh" className="h-10 w-10 rounded-full shadow-md" />
-          <span className="font-semibold text-lg text-gray-900 dark:text-gray-100">
+          <span className="font-semibold text-lg font-serif  text-gray-900 dark:text-gray-100">
             Sami Sheikh
           </span>
         </motion.div>

@@ -43,3 +43,22 @@ title: "Mobile App",
    img:iphone
 }
 ]
+// src/data/experienceData.js
+const experienceapi = [
+  {
+    title: "react native Engineer",
+    company: "Tech Solutions Inc.",
+    duration: "Jan 2026 - Present",
+    description: "Developed and maintained web applications using React, Node.js, and MongoDB. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+    technologies: ["React.js", "Node.js", "MongoDB", "AWS"]
+  },
+  {
+    title: "Junior react  Developer",
+    company: "Innovate Corp.",
+    duration: "Jul 2021 - Dec 2022",
+    description: "Assisted in the development of front-end features and performed testing and debugging. Gained experience in responsive design and version control.",
+    technologies: ["HTML", "CSS", "JavaScript", "Git"]
+  }
+];
+
+export default experienceapi;
