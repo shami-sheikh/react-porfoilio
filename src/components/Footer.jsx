@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaInstagram, FaGithub, FaTwitter, FaRocket, FaFire, FaBolt, FaHeart, FaCode } from 'react-icons/fa';
-
+import sami from '../assets/sami.jpg'
 export default function Footer() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [particles, setParticles] = useState([]);
@@ -103,7 +103,7 @@ export default function Footer() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 rounded-full blur-xl group-hover:blur-2xl transition-all animate-pulse"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop" 
+                  src= {sami}
                   alt="profile" 
                   className={`relative w-20 h-20 rounded-full border-4 border-white shadow-2xl transform group-hover:scale-110 transition-all duration-300 ${glitchActive ? 'animate-pulse' : ''}`}
                 />
