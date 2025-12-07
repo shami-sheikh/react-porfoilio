@@ -121,11 +121,11 @@ function Header() {
           initial="hidden"
           animate="visible"
           variants={{
-            hidden: { opacity: 0, y: -20 },
+            hidden: { opacity: 0, y: -40 },
             visible: {
               opacity: 1,
               y: 0,
-              transition: { staggerChildren: 0.1, delay: 0.3 },
+              transition: { staggerChildren: 0.1, delay: 0.3,duration:0.8 },
             },
           }}
           className="hidden lg:flex items-center gap-8"

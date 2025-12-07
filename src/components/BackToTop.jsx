@@ -24,7 +24,7 @@ export default function BackToTop() {
       aria-label="Back to top"
       className="fixed right-6 bottom-6 z-50 bg-violet-600 hover:bg-violet-700 text-white p-3 rounded-full shadow-lg transform transition-transform duration-200 hover:scale-105"
     >
-        <FaChevronUp />
+        <FaChevronUp className='animate-bounce' />
      
     </button>
   )

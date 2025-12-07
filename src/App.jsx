@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Footer from "./components/Footer";
 
 // Lazy load heavy components
 const Home = lazy(() => import("./components/Home"));
@@ -68,6 +69,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
+        <Footer/>
         <Suspense fallback={null}>
           <BackToTop />
         </Suspense>
