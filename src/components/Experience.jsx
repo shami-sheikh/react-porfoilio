@@ -1,10 +1,48 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import experienceapi from '../imgapi/img';
 import { motion } from "framer-motion";
 
 function Experience() {
+    const [stars , setstars]=useState([])
+   useEffect(() => {
+   const interval=setInterval(()=>{
+    setstars(prev=>[
+      ...prev.slice(-20),
+     {
+      id:Date.now(),
+      x:Math.random()*100,
+      y:Math.random()*100,
+      size:Math.random()*4+2,
+      duration:Math.random()*3+2
+     }
+    ],200)
+   })
+   return()=>clearInterval(interval)
+ }, [])
+ 
   return (
+    <>   <div>
+
+    </div>
     <section className='flex justify-center py-16 bg-gray-900 text-white'>
+            {
+        stars.map(stars=>(
+          <div key={stars.id} className="absolute w-1 h-1 rounded-full bg-white animate-ping"
+          
+          style={
+            {
+              left:`${stars.x}%`,
+              top:`${stars.y}%`,
+              width:`${stars.size}px`,
+              height:`${stars.size}px`,
+              animationDuration:`${stars.duration}s`
+            }
+          }
+          >
+
+          </div>
+        ))
+      }
       <div className='container mx-auto px-6'>
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
@@ -71,6 +109,7 @@ function Experience() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

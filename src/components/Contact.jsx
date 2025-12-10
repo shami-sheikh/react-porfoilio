@@ -10,7 +10,6 @@ function Contact() {
   const sectionRef = useRef(null);
   const finaltextref = useRef(null);
   const initialref = useRef(null);
- 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
@@ -141,6 +140,7 @@ function Contact() {
 
   return (
     <>
+ 
       <section
         ref={sectionRef}
         id="contact"
